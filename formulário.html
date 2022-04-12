@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		
+
+		body{
+			margin-left:26% ;
+			margin-top:2%;
+			font-family: sans-serif;
+
+        }
+        fieldset{
+        	border:0;
+        	margin-right:100% ;
+        	float: left;
+        
+
+        }
+        #titulo{
+        	margin-left: 17%
+        }
+        input:focus, select:focus{
+        	background: #E0E0F8
+        }
+        button{
+        	margin-left: 25%;
+        	width: 200px;
+        	font-size:20px;
+        	border-radius:8px;
+        	cursor: pointer;
+        	transition-duration: 0.5s;
+
+        }
+        button:hover{
+        	background-color: grey;
+        	color: white;
+        }
+
+
+        input{
+        	 border-radius: 4px
+        }
+        select{
+        	border-radius: 4px;
+        }
+
+
+		
+
+
+
+	</style>
+	<title>Formulários</title>
+</head>
+<body>
+	<h1 id="titulo">Atividade de formulário</h1>
+	<form>
+		<fieldset>
+			
+			<label for="nome"><strong>Nome</strong>
+			<input type="text" name="nome" required="required"></label>
+			<br><br>
+			<label for="email"><strong>Email</strong></label>
+			<input type="email" name="email"  required="required">
+			<br><br>
+			<label for="cpf"><strong>CPF</strong></label>
+			<input type="text" name="cpf" placeholder="000.000.000-00" required="required">
+			<br><br>
+			<label for="número"> <strong>Telefone</strong></label>
+			<input type="text" name="número" placeholder="DDD+99999-9999" required="required">
+			<br>
+		</fieldset>
+
+		<fieldset>
+			<label for="login"><strong>Login</strong></label>
+			<input type="login" name="login" required="required">
+			<br><br>
+			<label for="senha"><strong>Senha</strong>
+			<input type="password" name="senha" required="required">
+			<br>
+			</label>
+		</fieldset>
+		
+		<fieldset>
+		<label for="sexo"><strong>Sexo</strong></label>
+			<select name="sexo" required="required">
+				<option selected disabled value="">Selecione</option>
+				<option>Masculino</option>
+				<option>Feminino</option>
+			</select>
+			<br>
+		</fieldset>
+
+			<button type="submit">Enviar</button>
+		
+		</fieldset><br><br>
+
+
+	
+
+		
+
+
+
+	</form>
+
+</body>
+</html>
